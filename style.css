@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.relogio{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+    text-align: center;
+    width: 2.5em;
+    height: 1em;
+    color: #2dfc52;
+    font-size: 7em;
+    border:2px solid #2dfc52;
+    font-family: 'Qahiri', sans-serif
+}
+
+.display:hover{
+    filter: drop-shadow( 0 0 1px #2dfc52) drop-shadow( 0 0 1px #2dfc52) drop-shadow( 0 0 40px #2dfc52);
+}
+
+.title{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-time{
+    cursor: pointer;
+    border-right: 2px solid #2dfc52;
+    color: #2dfc52;
+    margin-top: 1em;
+    font-size: 3.5em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    filter: drop-shadow( 0 0 1px #2dfc52) drop-shadow( 0 0 3px #2dfc52) drop-shadow( 0 0 40px #2dfc52);
+}
+
+.textName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textName:hover{
+    filter: drop-shadow( 0 0 1px #2dfc52) drop-shadow( 0 0 3px #2dfc52) drop-shadow( 0 0 40px #2dfc52);
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    border-right: 2px solid #2dfc52;
+    color: #2dfc52;
+    font-size: 1.5rem;
+}
+
+.typing-name{
+    animation: blinkCursor 800ms steps(10) infinite normal, typingName 3s steps(27) 3s normal both;
+}
+
+.typing-title{
+    animation: blinkCursor 800ms steps(10) infinite normal, typingTitle 2s steps(10) 0.5s normal both;
+}
+
+@media all and (max-width:500px){
+    .name{
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 3em;
+    }
+}
+
+@keyframes typingTitle{
+    from{
+        width: 0;
+    }
+    to{
+        width:6.2em;
+    }
+}
+
+@keyframes typingName{
+    from{
+        width: 0;
+    }
+    to{
+        width:16.3em;
+    }
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color:#2dfc52;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
