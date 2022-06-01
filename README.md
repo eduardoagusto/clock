@@ -1,6 +1,6 @@
 <h1 align=center>Clock/Relógio</h1>
 <h2>Sobre o projeto</h2>
-<p>O intuito do projeto, foi para estudos complementares sobre JavaScript, onde tive a oportunidade de entender como a função nativa Date() da linguagem funcionava. Levei tambem como aprendizado, a formatação do horário, para uma forma amigável e intuitiva de visualização.</p>
+<p>O intuito do projeto, foi para estudos complementares sobre JavaScript, onde tive a oportunidade de entender como a função nativa Date() da linguagem funcionava. Levei tambem como aprendizado, a formatação do horário, para uma forma amigável e intuitiva de visualização. Também, usei o projeto como base de estudos para CSS3, onde pude implementar algumas propriedades keyframe{}, para criar animações de escrita e o piscar do Cursor (barra vertical de digitação).</p>
 
 <h2>Imagem do Projeto</h2>
 <p align=center>
